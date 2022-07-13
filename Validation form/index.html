@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h1 class="head">Registration form</h1>
+    <div class="container">
+        <div class="form">
+   <form action="output.html" method="get" onsubmit="return valid();">
+<label for="box1">Name : </label>
+<input type="text" name="Username" id="box1" placeholder="Please enter your name here"> 
+<span id="error1"></span><br><br>
+
+<label for="box2">Phone : </label>
+<input type="text" name="number" id="box2" placeholder="please enter your phone number here">
+<span id="error2"></span><br><br>
+
+<label>Gender : </label>
+<input type="radio" name="gender" id="radio1" value="Male"> <label for="radio1">Male</label>
+<input type="radio" name="gender" id="radio2" value="Female"> <label for="radio2">Female</label>
+<span id="error3"></span><br><br>
+
+<label>Skills : </label>
+<label for="check1">HTML</label> <input type="checkbox" name="skills" id="check1" value="HTML"> 
+<label for="check2">CSS</label> <input type="checkbox" name="skills" id="check2" value="CSS"> 
+<label for="check3">Java script</label> <input type="checkbox" name="skills" id="check3" value="Java script"> 
+<label for="check4">Others</label> <input type="checkbox" name="skills" id="check4" value="Others"> 
+<span id="error4"></span><br><br>
+
+<label for="box5">Department :</label>
+<select id="box5" name="department">
+    <option selected>--Select--</option>
+    <option value="BSC">BSC</option>
+    <option value="CSE">CSE</option>
+    <option value="IT">IT</option>
+</select>
+<span id="error5"></span><br><br>
+
+<div class="btn"><input type ="submit" value ="Submit"></div>
+</div>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
